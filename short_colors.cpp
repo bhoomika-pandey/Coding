@@ -2,11 +2,11 @@ class Solution {
 public:
     void sortColors(vector<int>& nums) {
         int t = 0, m = 0, l = 0, h = nums.size() - 1;
-        while(m<h)
+        while(m<=h)
         {
             if(nums[m]<1)
             {
-                t = nums[m];
+                t = nums[l];
                 nums[l] = nums[m];
                 nums[m] = t;
                 l++;
